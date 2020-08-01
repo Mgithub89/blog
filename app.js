@@ -4,10 +4,10 @@ const bodyparser = require("body-parser"),
       express = require("express"),
 	  app = express(),
       methodOverride = require("method-override");
-mongoose.connect('mongodb://localhost:27017/restful-blog-app', {
-  useNewUrlParser: true,
-  useUnifiedTopology: true
-});
+// mongoose.connect('mongodb://localhost:27017/restful-blog-app', {
+//   useNewUrlParser: true,
+//   useUnifiedTopology: true
+// });
 //App setup
 app.use(express.static("public"));
 app.use(bodyparser.urlencoded({extended: true}));

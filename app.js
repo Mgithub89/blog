@@ -8,7 +8,7 @@ const bodyparser = require("body-parser"),
 //   useNewUrlParser: true,
 //   useUnifiedTopology: true
 // });
-mongoose.connect('mongodb+srv://Mongo0415:Mongodb89@cluster0.jf0aj.mongodb.net/blogdb?retryWrites=true&w=majority', {
+mongoose.connect('process.env.DATABASEURL',{
   useNewUrlParser: true,
   useUnifiedTopology: true
 });
